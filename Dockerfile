@@ -9,7 +9,4 @@ RUN apk add build-base
 WORKDIR /go/src/project/
 
 COPY . /go/src/project/
-RUN go build -o /bin/go-app
-
-WORKDIR /app
 CMD ["/bin/go-app"]
